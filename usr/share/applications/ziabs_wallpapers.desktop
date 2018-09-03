@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Random Desktop Wallpapers (ziAbs)
+Comment=Random Wallpapers For Ubuntu From ziAbs.
+Terminal=true
+Exec=/var/ziabsWallpapers/run.sh
+Icon=/var/ziabsWallpapers/icons/rzw.png
+Type=Application
+Categories=Utility;
+Keywords=ziAbs Random Wallpapers;

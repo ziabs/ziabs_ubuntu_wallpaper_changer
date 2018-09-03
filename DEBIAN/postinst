@@ -1,0 +1,24 @@
+#!/bin/sh
+
+echo "\n---------------- Installing ziAbs Wallpepers --------------\n"
+mkdir -p /var/ziabsWallpapers
+cp /var/ziabsWallpapers/default.jpg /var/ziabsWallpapers/ziabs.jpg
+mv /var/ziabsWallpapers/default.jpg /var/ziabsWallpapers/1.jpg
+mv /var/ziabsWallpapers/icons/rzwfwh.png /var/ziabsWallpapers/icons/rzw.png
+mv /var/ziabsWallpapers/ziabs_run_deb.sh /var/ziabsWallpapers/run.sh
+mv /var/ziabsWallpapers/ziabs_wallpapers_deb.sh /var/ziabsWallpapers/ziabs_wallpapers.sh
+mv /var/ziabsWallpapers/ziabs_uninstall_deb.sh /var/ziabsWallpapers/uninstall;
+x=1
+while [ $x -le 30 ]
+do
+    sleep 0.1
+    echo -n "~~"
+    x=$(( $x + 1 ))
+done
+echo ""
+
+(crontab -u ${USER} -l; echo "6 * * * * /bin/bash /var/ziabsWallpapers/ziabs_wallpapers.sh >/dev/null 2>&1 " ) | crontab -u ${USER} -
+
+echo "\n----------------  For Uninstall run this --------------"
+echo "\n	     sudo /var/ziabsWallpapers/uninstall";
+sleep 0.3;t=0.2;echo -n "\n ------------------- ";echo -n "T";sleep $t;echo -n "h";sleep $t;echo -n "a";sleep $t;echo -n "n";sleep $t;echo -n "k";sleep $t;echo -n "s";sleep $t;echo -n " ";sleep $t;echo -n ":";sleep $t;echo -n " ";sleep $t;echo -n "w";sleep $t;echo -n "w";sleep $t;echo -n "w";sleep $t;echo -n ".";sleep $t;echo -n "z";sleep $t;echo -n "i";sleep $t;echo -n "a";sleep $t;echo -n "b";sleep $t;echo -n "s";sleep $t;echo -n ".";sleep $t;echo -n "c";sleep $t;echo -n "o";sleep $t;echo -n "m ----------------\n \n";
