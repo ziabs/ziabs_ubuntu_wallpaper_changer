@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "\n---------------- Installing ziAbs Wallpepers --------------\n"
+echo "\n---------------- Installing ziAbs Wallpapers --------------\n"
 mkdir -p /var/ziabsWallpapers
 cp /var/ziabsWallpapers/default.jpg /var/ziabsWallpapers/ziabs.jpg
 mv /var/ziabsWallpapers/default.jpg /var/ziabsWallpapers/1.jpg
