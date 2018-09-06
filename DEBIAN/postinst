@@ -17,7 +17,7 @@ do
 done
 echo ""
 
-(crontab -u ${USER} -l; echo "6 * * * * /bin/bash /var/ziabsWallpapers/ziabs_wallpapers.sh >/dev/null 2>&1 " ) | crontab -u ${USER} -
+(crontab -u ${USER} -l; echo "*/30 * * * * /bin/bash /var/ziabsWallpapers/ziabs_wallpapers.sh >/dev/null 2>&1 " ) | crontab -u ${USER} -
 
 echo "\n----------------  For Uninstall run this --------------"
 echo "\n	     sudo /var/ziabsWallpapers/uninstall";
