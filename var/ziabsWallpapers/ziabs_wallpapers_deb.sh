@@ -1,7 +1,7 @@
 #!/bin/sh
 
 IMAGE=$(shuf -i 666-694 -n 1)
-IMAGE_URL="http://ziabs.com/ziabs-wallpapers/${IMAGE}.jpg"
+IMAGE_URL="https://ziabs.github.io/hub/ziabs-wallpapers/${IMAGE}.jpg"
 IMAGE_DIR="/var/ziabsWallpapers/"
 IMAGE_1="${IMAGE_DIR}1.jpg"
 IMAGE_2="${IMAGE_DIR}2.jpg"
